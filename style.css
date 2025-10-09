@@ -2469,7 +2469,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 3rem;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: var(--transition-elegant);
     border-top: 1px solid var(--nav-glass-border);
   }
