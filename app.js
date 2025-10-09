@@ -163,7 +163,7 @@ class SophisticatedPortfolio {
 
         // Check for saved theme or system preference
         const savedTheme = localStorage.getItem('sophisticated-theme');
-        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'dark' : 'light';
         const currentTheme = savedTheme || systemTheme;
 
         this.setElegantTheme(currentTheme);
@@ -176,7 +176,7 @@ class SophisticatedPortfolio {
         });
 
         // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
             if (!localStorage.getItem('sophisticated-theme')) {
                 this.setElegantTheme(e.matches ? 'dark' : 'light');
             }
