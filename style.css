@@ -2460,7 +2460,7 @@ body {
   .premium-nav-menu {
     position: fixed;
     top: 90px;
-    left: 0;
+    left: 1;
     width: 100%;
     height: calc(100vh - 90px);
     background: var(--nav-glass-bg);
