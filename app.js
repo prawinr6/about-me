@@ -763,40 +763,6 @@ class SophisticatedPortfolio {
         }
     }
 
-    // Refined accessibility enhancements
-    initRefinedAccessibility() {
-        // Enhanced focus management for project cards is handled in renderSophisticatedProjects
-        // Add skip link functionality
-        const skipLink = document.createElement('a');
-        skipLink.href = '#main-content';
-        skipLink.textContent = 'Skip to main content';
-        skipLink.className = 'skip-link';
-        skipLink.style.cssText = `
-            position: absolute;
-            top: -40px;
-            left: 20px;
-            background: var(--burgundy-primary);
-            color: var(--elegant-white);
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 0.25rem;
-            z-index: 10000;
-            transition: top 0.3s;
-        `;
-        
-        skipLink.addEventListener('focus', () => {
-            skipLink.style.top = '20px';
-        });
-        
-        skipLink.addEventListener('blur', () => {
-            skipLink.style.top = '-40px';
-        });
-        
-        document.body.insertBefore(skipLink, document.body.firstChild);
-        
-        console.log('🔧 Refined accessibility features initialized');
-    }
-
     // Handle sophisticated window resize
     onSophisticatedResize() {
         // Recalculate animations and layouts
